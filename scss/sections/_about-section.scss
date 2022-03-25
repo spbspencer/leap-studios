@@ -1,0 +1,111 @@
+@import '../custom';
+
+
+
+#about-root{
+    height: 100vh;
+    max-height: 900px;
+    min-height: 900px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F5F5;
+
+    
+    p{
+        color: rgb(141, 141, 141);
+    }
+
+
+    .about-content-root{
+        display: flex;
+        box-sizing: border-box;
+        height: 700px;
+        width: 95%;
+        max-width: 1200px;
+
+        .about-content-container-1{
+            display: flex;
+            padding: 10px;
+            justify-content: center;
+            flex-direction: column;
+            box-sizing: border-box;
+            width: 50%;
+            height: 100%;
+        }
+        .about-content-container-2{
+            display: flex;
+            padding: 10px;
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 100%;
+
+            .about-img-container{
+                display: flex;
+                height: 90%;
+                width: 90%;
+                background-image: url(../../assets/css/img/saas-profile-img-1.jpeg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                border-radius: 10px;
+
+            }
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+        #about-root{
+            max-height: 2200px;
+
+            .about-content-root{
+                height: 80%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .about-content-container-1{
+                    min-width: 500px;
+                    height: 30%;
+                }
+                .about-content-container-2{
+                    height: 70%;
+                    min-width: 500px;
+
+                    .about-img-container{
+
+                    }
+                }
+            }
+        }
+}
+
+
+@media only screen and (max-width: 550px) {
+    #about-root{
+
+        .about-content-root{
+ 
+
+            .about-content-container-1{
+                min-width: 300px;
+
+            }
+            .about-content-container-2{
+                min-width: 300px;
+                width: 100%;
+
+                .about-img-container{
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}

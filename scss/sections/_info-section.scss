@@ -1,0 +1,186 @@
+@import '../custom';
+
+
+
+
+#info-root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    min-height: 700px;
+    width: 100vw;
+
+    p{
+        color: rgb(141, 141, 141);
+    }
+
+    .info-content-root{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90%;
+        width: 95%;
+        max-width: 1200px;        
+
+
+        .info-title-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            text-align: center;
+            // border: black solid 1px;
+            width: 70%;
+            min-width: 250px;
+            height: 40%;
+        }
+
+        .info-content-container{
+            display: flex;
+            width: 100%;
+            height: 60%;
+            justify-content: space-between;
+
+     
+
+            .info-content{
+                display: flex;
+                flex-direction: column;
+                width: 25%;
+                min-width: 250px;
+                max-width: 250px;
+                height: 100%;
+                max-height: 350px;
+            }
+            .info-content-1{
+
+
+                .info-content-container-1-top{
+                    display: flex;
+                    height: 50%;
+                    width: 90%;
+                    background-image: url(../../assets/css/img/saas-info-sketch-1.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .info-content-container-1-bot{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    height: 50%;
+                    width: 90%;
+                }
+            }
+            .info-content-2{
+
+
+                .info-content-container-2-top{
+                    display: flex;
+                    height: 50%;
+                    width: 90%;
+                    background-image: url(../../assets/css/img/saas-info-sketch-2.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .info-content-container-2-bot{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    height: 50%;
+                    width: 90%;
+                }
+            }
+            .info-content-3{
+
+
+                .info-content-container-3-top{
+                    display: flex;
+                    height: 50%;
+                    width: 90%;
+                    background-image: url(../../assets/css/img/saas-info-sketch-3.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .info-content-container-3-bot{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    height: 50%;
+                    width: 90%;
+                    
+                }
+            }
+            .info-content-4{
+
+
+                .info-content-container-4-top{
+                    display: flex;
+                    height: 50%;
+                    width: 90%;
+                    background-image: url(../../assets/css/img/sass-info-sketch-4.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .info-content-container-4-bot{
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    height: 50%;
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1100px) {
+    #info-root{
+        height: 1200px;
+
+        .info-content-root{
+            justify-content: flex-start;
+
+            .info-title-container{
+                max-height: 300px;
+            }
+            
+            .info-content-container{
+                height: 800px;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: flex-start;
+                
+                .info-content{
+                }
+            }
+        }
+    }
+   
+}
+
+
+@media only screen and (max-width: 550px) {
+    #info-root{
+        height: 2000px;
+
+        .info-content-root{
+
+            .info-title-container{
+                width: 100%;
+            }
+            
+            .info-content-container{
+                height: 1600px;
+
+                
+                .info-content{
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
